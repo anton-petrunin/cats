@@ -4,7 +4,7 @@
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}%+отступ в первой строке
 \usepackage{graphicx}
-\usepackage{wrapfig}
+\usepackage{epsfig,lpic,wrapfig}
 \usepackage{bm}
 \usepackage[
 colorlinks=true,
@@ -84,6 +84,12 @@ isbn=false]{biblatex}
 \def\endclaim{
 \par\medskip}
 \newenvironment{thm}{\claim}{\endclaim}
+
+%levi
+\usepackage{caption}
+\usepackage{chngcntr}
+\numberwithin{figure}{chapter}
+\captionsetup[figure]{labelformat=default, labelsep=period}
 
 \newenvironment{addedbytheeditors}{\par\medskip\footnotesize
 % \trivlist\item[]

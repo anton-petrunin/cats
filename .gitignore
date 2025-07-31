@@ -1,4 +1,5 @@
 *.pdf
+!/pics/*.pdf
 lib/*
 *.backup
 *.log
@@ -21,3 +22,4 @@ lib/*
 *.mpx
 *.mps
 !/.gitignore
+
