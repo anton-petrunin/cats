@@ -1,4 +1,5 @@
 \usepackage{amssymb, amsfonts, amsmath, amsthm}
+\usepackage{bm}
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
@@ -85,12 +86,6 @@ isbn=false]{biblatex}
 \par\medskip}
 \newenvironment{thm}{\claim}{\endclaim}
 
-%levi
-\usepackage{caption}
-\usepackage{chngcntr}
-\numberwithin{figure}{chapter}
-\captionsetup[figure]{labelformat=default, labelsep=period}
-
 \newenvironment{addedbytheeditors}{\par\medskip\footnotesize
 % \trivlist\item[]
 }{\par\addvspace{\medskipamount}} % \endtrivlist
@@ -104,3 +99,6 @@ isbn=false]{biblatex}
 
 \newcommand*{\z}[1]{#1\nobreak\discretionary{}%
             {\hbox{$\mathsurround=0pt #1$}}{}}
+
+
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
