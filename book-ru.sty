@@ -24,6 +24,8 @@ urlcolor=black,
 \usetikzlibrary{arrows}
 
 
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
 
 \usepackage[xindy]{imakeidx}
 
@@ -89,9 +91,6 @@ isbn=false]{biblatex}
 \newenvironment{addedbytheeditors}{\par\medskip\footnotesize
 % \trivlist\item[]
 }{\par\addvspace{\medskipamount}} % \endtrivlist
-
-\usepackage{chngcntr}
-\counterwithout{figure}{chapter}
 
 \def\PP{\mathbb{P}}
 
