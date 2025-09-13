@@ -21,8 +21,16 @@ urlcolor=black,
 \usepackage{enumerate}
 \usepackage{multicol}
 \usepackage{customdice}
+
 \usepackage{tikz}
-\usetikzlibrary{arrows}
+\usetikzlibrary{arrows,decorations.text}
+\ExplSyntaxOn
+\NewExpandableDocumentCommand{\bracetext}{m}
+ {
+  \text_map_function:nN {#1} \__anton_brace:n
+ }
+\cs_new:Nn \__anton_brace:n { {#1} }
+\ExplSyntaxOff
 
 
 \usepackage{chngcntr}
