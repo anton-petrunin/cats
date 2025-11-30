@@ -26,15 +26,22 @@ pdfsubject={Математика}}
 
 
 
+
+%\makeatletter\let\orig@chapter\chapter\renewcommand{\chapter}[1]{\orig@chapter{#1.}}\makeatletter\let\orig@section\section\renewcommand{\section}[1]{\orig@section{#1.}}\usepackage{environ}\RenewEnviron{figure}[1][]{}\RenewEnviron{figure*}[1][]{}\renewcommand{\footnote}[1]{\textup{\ (#1)}}
+
 \begin{document}
-%\pagestyle{empty}
+
+%\pagestyle{empty}\def\emph{\textit}
+
 
 \title{\thetitle\\
 и ещё 76 парадоксов и головоломок}
 \author{Марк Леви
 \\
 \\
-перевод Р. Г. Матвеева и А. М. Петрунина}
+перевод Р. Г. Матвеева и А. М. Петрунина
+\\
+под редакцией Марка Леви}
 \date{}
 \maketitle
 
@@ -48,6 +55,36 @@ pdfsubject={Математика}}
 \vfill
 
 \pagebreak
+\thispagestyle{empty}
+
+\
+
+\vfill
+
+\begin{center}
+{\Large
+Ольге,\\[3mm]
+Кире,\\[3mm]
+Эрику,\\[3mm]
+Максу,\\[3mm]
+Нике,\\[3mm]
+Вике,\\[3mm]
+Хосе\\[3mm]
+и\\[3mm]
+Райану}
+\end{center}
+
+\vfill
+
+\
+
+\newpage
+
+{
+
+\tableofcontents
+
+}
 
 \thispagestyle{empty}
 \input{00thanks.tex}\input{01fun.tex}\input{02space.tex}\input{03watter.tex}\input{04floating.tex}\input{05flows.tex}\input{06bikes.tex}\input{07coriolis.tex}\input{08centrifugal.tex}\input{09gyroscope.tex}\input{10hot.tex}\input{11perpetum.tex}
@@ -70,14 +107,6 @@ pdfsubject={Математика}}
 
 }
 
-
-\newpage
-
-{
-
-\tableofcontents
-
-}
 
 \end{document}
 
